@@ -1,37 +1,41 @@
-# foreign-language-text-reader
-The Foreign Language Text Reader by lang-learn-guy on sourceforge, where he toils madly without version controlling I guess
+# Foreign Language Text Reader 1.4.1
+- This fork aims to increase your study workflow speed when using FLTR for studying Japanese. It has the following modifications already implemented or planned to do so:
+  - [x] Autofill new term fields with data from Jisho.org, so thanks to them! 
+    - [ ] Restrict this function to Japanese.
+  - [ ] Support for other languages (??)
 
-## Links
+# Links
+- Jisho.org
+  - Thanks for Jisho.org for providing an API so I didn't have to spend even more time writing this! Please check them out!
+    - https://jisho.org/
+- JsonPath
+  - https://github.com/json-path/JsonPath
+- OkHttp
+  - https://github.com/square/okhttp
 
-Main website: https://sourceforge.net/projects/foreign-language-text-reader/
+## Original Project
+- Original website: https://sourceforge.net/projects/foreign-language-text-reader/
+- Original tarball: https://sourceforge.net/projects/foreign-language-text-reader/files/
+- Original Documentation: https://foreign-language-text-reader.sourceforge.io
 
-Download original tarball: https://sourceforge.net/projects/foreign-language-text-reader/files/
-
-Online Documentation: https://foreign-language-text-reader.sourceforge.io
-
-## File structure
-
-- bin/       - Contains a prebuilt jarfile, the documentation PDF, and some demo data
-- resources/ - Contains non-source files necessary to build or install FLTR
+# File structure
+- bin/       - Contains the documentation PDF, and some demo data
 - src/       - Contains the source code of FLTR
-- aur/       - For arch linux
-- makefile   - Builds FLTR anywhere (anywhere civilized - idk how Windows works)
+- makefile   - Builds FLTR (not tested)
 - README.md  - Documentation
 
-## Building
+# How to build
+- In case you don't trust this repo, you can build the final jar by yourself:
+  - Using IntelliJ
+    - Generate the artifact by moving the META-INF to the resources folder. 
+    - For further instructions, please read https://www.jetbrains.com/help/idea/working-with-artifacts.html
 
-Run `make`
-
-## Installing
-
-IMPORTANT! Only do this on Linux. Only tested on Arch, otherwise you might have to modify it
-
-Run `sudo make install`
-
-Installs to `/usr/local/` by default. Otherwise set the INSTALL\_PREFIX variable (and remember to run `sudo` with the `-E` option)
+## Installing (Linux)
+- **IMPORTANT!!** Please proceed with caution because I haven't tested the install script after modifying the project
+  - Run `sudo make install`
+    - It installs to `/usr/local/` by default. Otherwise set the INSTALL\_PREFIX variable (and remember to run `sudo` with the `-E` option)
 
 ## LICENSE
-
 Foreign Language Text Reader (FLTR) - A Tool for Language Learning.
 
 Copyright © 2012-2021 FLTR Developers et al.
